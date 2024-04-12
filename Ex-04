@@ -1,0 +1,19 @@
+#Leia várias idades e calcule a média entre as idades (usar uma variável para idade).
+somaIdades = 0
+cont = 0
+
+qnt = int(input("Quantas idades você deseja inserir? "))
+for i in range(qnt):
+    idade = int(input(f"Digite a idade {i+1}: "))
+    
+    if idade < 0:
+        print("Por favor, insira uma idade positiva")
+    else:
+        somaIdades += idade
+        cont += 1
+
+if cont > 0:
+    medIdades = somaIdades / cont
+    print(f"A média das idades é: {medIdades}")
+else:
+    print("Nenhuma idade foi inserida")
