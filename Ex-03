@@ -4,7 +4,7 @@ while True:
     if 1 <= valor <= 10:
         break
     else:
-        print("Por favor, digite um valor entre 1 e 10.")
+        print("Por favor, digite um valor entre 1 e 10")
 
 print(f"Tabuada de: {valor}")
 for i in range(1, 11):
